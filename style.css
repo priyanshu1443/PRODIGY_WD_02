@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: rgb(27, 26, 26);
+  color: white;
+  font-family: 'Comfortaa', cursive;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+#main {
+  justify-content: space-around;
+
+  flex-direction: column;
+  height: 100vh;
+  gap: 7rem;
+  padding: 5rem 3rem;
+}
+
+/* time section start  */
+#time ul {
+  gap: 2rem;
+  list-style: none;
+}
+
+#time ul li {
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+
+.time_number {
+  width: 10rem;
+}
+
+.colon {
+  width: 25px;
+}
+
+.blink {
+  animation: blinking 2s ease-in-out 1s infinite;
+}
+
+@keyframes blinking {
+  25% {
+    opacity: .0;
+  }
+
+  75% {
+    opacity: .9;
+  }
+}
+
+/* time section end  */
+
+/* button start  */
+
+#btn_Section {
+  width: 500px;
+  height: 60px;
+  justify-content: space-around;
+}
+
+#btn_Section div {
+  border: 2px solid #9bc0ff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d2929;
+  cursor: pointer;
+}
+
+/* button end  */
+
+/* list of flags start  */
+
+#list_of_flag {
+  /* border: 2px solid red; */
+  flex-grow: 1;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  list-style: none;
+  height: 350px;
+  width: auto;
+  overflow: auto;
+  display: none;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+#list_of_flag::-webkit-scrollbar {
+  display: none;
+}
+
+#list_of_flag li {
+  margin: 10px;
+}
+
+#list_of_flag span {
+  display: inline-block;
+  width: 8rem;
+}
+
+/* list of flags end  */
+
+@media(max-width:1025px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media(max-width:768px) {
+  html {
+    font-size: 50%;
+  }
+
+  #time ul {
+    gap: 1rem;
+  }
+
+  #time ul li {
+    font-size: 4rem;
+  }
+
+
+  .time_number {
+    width: 7rem;
+  }
+
+
+  #btn_Section {
+    width: 200px;
+  }
+
+  #list_of_flag {
+    font-size: 3rem;
+  }
+
+  #btn_Section div {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media(max-width:381px) {
+  #time ul {
+    gap: .5rem;
+  }
+
+  #time ul li {
+    font-size: 3rem;
+  }
+
+  .time_number {
+    width: 5rem;
+  }
+
+  .colon {
+    margin-left: 1rem;
+  }
+
+  #list_of_flag {
+    font-size: 2.5rem;
+  }
+
+  #list_of_flag span {
+    width: 3rem;
+  }
+}

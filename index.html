@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stop watch</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/cbc573eb6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="flex" id="main">
+    <div id="time">
+      <ul class="flex">
+        <li class="time_number " id="hour">00</li>
+        <li class="colon ">:</li>
+        <li class="time_number " id="minute">00</li>
+        <li class="colon">:</li>
+        <li class="time_number " id="second">00</li>
+        <li class="colon">:</li>
+        <li class="time_number " id="milisecond">00</li>
+      </ul>
+    </div>
+    <div id="btn_Section" class="flex">
+      <div id="start_pause" class="flex"><i class="fa-solid fa-play fa-2xl" style="color: #3881ff;"></i></div>
+      <div id="flag_reset" style="display: none;"></div>
+    </div>
+    <div id="flags">
+      <ul id="list_of_flag" class="flex">
+      </ul>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
